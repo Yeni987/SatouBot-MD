@@ -13,7 +13,7 @@ let noprem = `
 🌀 *Registrado:* ${registered ? '✅': '❌'}
 
 👑 *RECURSOS*
-🌟 *Estrellas:* ${estrellas}
+🥖 *Panes:* ${estrellas}
 💥 *Nivel:* ${level}
 💫 *Experiencia:* ${exp}
 ✨️ *Rango:* ${role}
