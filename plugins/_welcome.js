@@ -13,7 +13,7 @@ await conn.sendLuffy(m.chat, packname, textbot, welcome, img, img, redes, fkonta
   }
 
   if (chat.welcome && m.messageStubType == 28) {
-    let bye = ` 「🍭」SatouBot - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto :3 」\n\n > ✐ Me podrias dar una estrellita en el repositorio oficial de la bot?
+    let bye = ` 「🍭」SatouBot - MD \n「 Adios 」\n「 @${m.messageStubParameters[0].split`@`[0]} 」\n「 Se fue 」\n「 Vuelve pronto :3 」\n\n> ✐ Me podrias dar una estrellita en el repositorio oficial de la bot?
 > 🜸 https://github.com/Legna-chan`
 await conn.sendLuffy(m.chat, packname, textbot, bye, img, img, redes, fkontak)
   }
