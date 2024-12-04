@@ -1,5 +1,5 @@
-### HanyuuBot-MD
+### SatouBot-MD
 > **Versión Beta 🚩**
 
-> **[Powered By Legna]
+> Powered By Legna
 
