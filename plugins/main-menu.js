@@ -163,7 +163,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
 let urls = [
-"https://files.catbox.moe/ktje0q.mp4",
+"https://files.catbox.moe/pnh49c.mp4",
 "https://files.catbox.moe/ktje0q.mp4",
 ];
 let gifUrl = urls[Math.floor(Math.random() * urls.length)];
