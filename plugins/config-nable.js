@@ -20,6 +20,17 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
+  
+  case 'nsfw':
+    case 'nsfwhot':
+    case 'nsfwhorny':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.nsfw = isEnable          
+break
 
   case 'antiPrivate':
     case 'antiprivado':
@@ -257,6 +268,7 @@ ${usedPrefix + command} autoread
 *🌸 Funciones de grupos*
 
 ${usedPrefix + command} welcome 
+${usedPrefix + command} nsfw
 ${usedPrefix + command} antibot
 ${usedPrefix + command} reaccion
 ${usedPrefix + command} autoread
