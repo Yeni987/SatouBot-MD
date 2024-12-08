@@ -22,11 +22,11 @@ return conn.reply(m.chat, `「🌸」Solo puedes usar este comando en el bot pri
 }
 async function serbot() {
 let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8);
-if (!fs.existsSync("./IanJadiBot/" + authFolderB)) {
-fs.mkdirSync("./IanJadiBot/" + authFolderB, { recursive: true });
+if (!fs.existsSync("./SatouJadiBot/" + authFolderB)) {
+fs.mkdirSync("./SatouJadiBot/" + authFolderB, { recursive: true });
 }
 if (args[0]) {
-fs.writeFileSync(`IanBot/creds.json`, Buffer.from(args[0], 'base64').toString('utf-8'))
+fs.writeFileSync(`Satou/creds.json`, Buffer.from(args[0], 'base64').toString('utf-8'))
 }
 const { state, saveState, saveCreds } = await useMultiFileAuthState(`./IanBot/${authFolderB}`);
 const msgRetryCounterMap = (MessageRetryMap) => { };
