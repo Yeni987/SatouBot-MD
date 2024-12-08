@@ -268,6 +268,7 @@ ${usedPrefix + command} autoread
 *🌸 Funciones de grupos*
 
 ${usedPrefix + command} welcome 
+${usedPrefix + command} nsfw
 ${usedPrefix + command} antibot
 ${usedPrefix + command} reaccion
 ${usedPrefix + command} autoread
