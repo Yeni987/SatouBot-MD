@@ -1,5 +1,5 @@
 {
-  "name": "IanBot-MD",
+  "name": "SatouBot-MD",
   "version": "2.0.5",
   "description": "Simple WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -18,20 +18,20 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/ianalejandrook15x/ian-bot-MD",
+  "homepage": "https://github.com/Legna-chan",
   "author": {
-    "name": "ianalejandrook15x"
+    "name": "LegnaOfc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianalejandrook15x/ian-bot-MD.git"
+    "url": "git+https://github.com/Legna-chan.git"
   },
   "bugs": {
-    "url": "https://github.com/ianalejandrook15x/ian-bot-MD/issues"
+    "url": "https://github.com/Legna-chan/SatouBot-MD/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-        "@whiskeysockets/baileys": "6.7.7",
+        "@whiskeysockets/baileys": "^6.7.7",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "^4.2.4",
         "@bochilteam/scraper-sosmed": "^1.0.5",
