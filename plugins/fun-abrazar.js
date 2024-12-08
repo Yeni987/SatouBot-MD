@@ -1,34 +1,53 @@
-import fetch from 'node-fetch';
+//Codígo creado por Destroy wa.me/584120346669
 
-const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-let who
-if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
-else who = m.chat
-if (!who) throw `🍭 Por favor, menciona el usuario`
-if (usedPrefix == 'a' || usedPrefix == 'A') return;
-let pp = "https://telegra.ph/file/4d80ab3a945a8446f0b15.mp4"
-let pp2 = "https://telegra.ph/file/ef3a13555dfa425fcf8fd.mp4"
-let pp3 = "https://telegra.ph/file/582e5049e4070dd99a995.mp4"
-let pp4 = "https://telegra.ph/file/ab57cf916c5169f63faee.mp4"
-let pp5 = "https://telegra.ph/file/fce96960010f6d7fc1670.mp4"
-let pp6 = "https://telegra.ph/file/33332f613e1ed024be870.mp4"
-try {
-const locale = 'es-ES';
-const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
-const document = doc[Math.floor(Math.random() * doc.length)];
-const str = `${taguser} le esta dando un fuerte abrazo a @${who.split`@`[0]} 🫂`
-if (m.isGroup) {
-conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6].getRandom() }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak});
-} else {
-conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6].getRandom() }, gifPlayback: true, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak});
+import fs from 'fs';
+import path from 'path';
+
+let handler = async (m, { conn, usedPrefix }) => {
+    let who;
+
+    if (m.mentionedJid.length > 0) {
+        who = m.mentionedJid[0];
+    } else if (m.quoted) {
+        who = m.quoted.sender;
+    } else {
+        who = m.sender;
+    }
+
+    let name = conn.getName(who);
+    let name2 = conn.getName(m.sender);
+    m.react('🫂');
+
+    let str;
+    if (m.mentionedJid.length > 0) {
+        str = `\`${name2}\` *le dió un fuerte abrazo a* \`${name || who}\`.`;
+    } else if (m.quoted) {
+        str = `\`${name2}\` *abrazo a* \`${name || who}\`.`;
+    } else {
+        str = `\`${name2}\` *se abrazó a sí mismo.*`.trim();
+    }
+
+    if (m.isGroup) {
+        let pp = 'https://telegra.ph/file/6a3aa01fabb95e3558eec.mp4'; 
+        let pp2 = 'https://telegra.ph/file/0e5b24907be34da0cbe84.mp4'; 
+        let pp3 = 'https://telegra.ph/file/6bc3cd10684f036e541ed.mp4';
+        let pp4 = 'https://telegra.ph/file/3e443a3363a90906220d8.mp4';
+        let pp5 = 'https://telegra.ph/file/56d886660696365f9696b.mp4';
+        let pp6 = 'https://telegra.ph/file/3eeadd9d69653803b33c6.mp4';
+        let pp7 = 'https://telegra.ph/file/436624e53c5f041bfd597.mp4';
+        let pp8 = 'https://telegra.ph/file/5866f0929bf0c8fe6a909.mp4';
+
+        const videos = [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8];
+        const video = videos[Math.floor(Math.random() * videos.length)];
+
+        let mentions = [who];
+        conn.sendMessage(m.chat, { video: { url: video }, gifPlayback: true, caption: str, mentions }, { quoted: m });
+    }
 }
-} catch {
-conn.reply(m.chat, '🍭 *¡Ocurrio un error!*', m, rcanal);
-}};
 
-handler.help = ['abrazar'].map((v) => v + ' <@usuario>');
-handler.tags = ['fun'];
-handler.command = /^(abrazar)$/i;
-handler.register = true;
+handler.help = ['hug/abrazar @tag'];
+handler.tags = ['emox'];
+handler.command = ['hug','abrazar'];
+handler.group = true;
+
 export default handler;
