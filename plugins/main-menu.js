@@ -53,7 +53,7 @@ Holis *%name* soy satou (≧σ≦) 🔪
 %readmore
 \t*🪷𝑳 𝑰 𝑺 𝑻 - 𝑪 𝑶 𝑴 𝑴 𝑨 𝑵 𝑫 𝑺🪷* 
 `.trimStart(),
-    header: '*•/• %category •/•*\n',
+    header: '•/• %category •/•\n',
   body: '> 🍧>%cmd',
   footer: '* ✽+†+✽―― ☆. ∆ .☆ ――✽+†+✽\n',
   after: `> ${dev}`,
