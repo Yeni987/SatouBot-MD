@@ -18,12 +18,12 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let args = text.trim().split(" ")
   if (args.length !== 2) return conn.reply(m.chat, `🔪 Formato incorrecto. Debes ingresar una cantidad de *🥖 Panes* y apostar a un color, por ejemplo ➩ *${usedPrefix + command} 20 black*`, m, rcanal)
 
-  let estrellas = parseInt(args[0])
+  let panes = parseInt(args[0])
   let color = args[1].toLowerCase()
 
   if (isNaN(panes) || panes <= 0) return conn.reply(m.chat, `🔪 Por favor, ingresa una cantidad válida para la apuesta.`, m, rcanal)
 
-  if (estrellas > 50) return conn.reply(m.chat, "🔪 La cantidad máxima de apuesta es de 50 *🥖 Panes.", m, rcanal)
+  if (panes > 50) return conn.reply(m.chat, "🔪 La cantidad máxima de apuesta es de 50 *🥖 Panes.", m, rcanal)
 
   if (!(color === 'black' || color === 'red')) return conn.reply(m.chat, "🔪 Debes apostar a un color válido: *black* o *red*.", m, rcanal)
 
