@@ -54,7 +54,7 @@ Holis *%name* soy satou (≧σ≦)
 `.trimStart(),
     header:'•/• %category •/•\n',
   body: '✐%cmd',
-  footer: '', m
+  footer: '',
   after: `> ${dev}`,
 }
 
