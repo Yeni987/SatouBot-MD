@@ -29,7 +29,7 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: '*sɪɢᴜᴇ ᴇʟ ᴄᴀɴᴀʟ ᴏғɪᴄɪᴀʟ ᴅᴇ ʟᴀ ʙᴏᴛ:*
+  before: `*꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦*
 
 Holis *%name* soy satou (≧σ≦)
 
