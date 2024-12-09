@@ -38,16 +38,16 @@ Holis *%name* soy satou (≧σ≦)
 ╰─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒
 %readmore
 ╭──〔  𝙸𝙽𝙵𝙾 𝚄𝚂𝙴𝚁  〕
-┃❀ 🄲ʟɪᴇɴᴛᴇ: %name
-┃❀ 🄴xᴘ: %exp
-┃❀ 🄽ɪᴠᴇʟ: %level
+┃❀ Ⓒʟɪᴇɴᴛᴇ: %name
+┃❀ Ⓔxᴘ: %exp
+┃❀ Ⓝɪᴠᴇʟ: %level
 ╰─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒
 %readmore
 ╭──〔  𝙸𝙽𝙵𝙾 𝙱𝙾𝚃  〕
-┃✰ 🄱ᴏᴛ: SatouBot-MD
-┃✰ 🄼ᴏᴅᴏ: publico
-┃✰ 🅃ɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴀ: %muptime
-┃✰ 🅄sᴜᴀʀɪᴏs: %totalreg
+┃✰ Ⓑᴏᴛ: SatouBot-MD
+┃✰ Ⓜᴏᴅᴏ: publico
+┃✰ Ⓣɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴀ: %muptime
+┃✰ Ⓤsᴜᴀʀɪᴏs: %totalreg
 ╰─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒
 %readmore
 \t *𝙻 𝙸 𝚂 𝚃 𝙰 - 𝙲 𝙾 𝙼 𝙰 𝙽 𝙳 𝙾 𝚂* 
