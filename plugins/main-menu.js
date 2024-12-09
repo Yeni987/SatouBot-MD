@@ -34,8 +34,8 @@ const defaultMenu = {
 Holis *%name* soy satou (≧σ≦)
 
 ╭──〔 𝙲𝙰𝙽𝙰𝙻 𝙾𝙵𝙸𝙲𝙸𝙰𝙻  〕
-┃   https://whatsapp.com/channel/0029Vavnhn0AojZ2SQ9Dur03
-┃   
+┃   ➩ 𝚌𝚊𝚗𝚊𝚕: https://whatsapp.com/channel/0029Vavnhn0AojZ2SQ9Dur03
+┃   ➩ 𝙶𝚒𝚝𝙷𝚞𝚋: https://github.com/Legna-chan
 ╰─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒
 %readmore
 ╭──〔  𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾  〕
